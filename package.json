@@ -1,0 +1,29 @@
+{
+  "name": "html5-video-chat",
+  "version": "1.0.0",
+  "description": "A simple peer to peer html5 video chat",
+  "main": "index.js",
+  "scripts": {
+    "build": "simplifyify src/index.js --outfiles dist/build. js --bundle",
+    "build:watch": "simplifyify src/index.js --outfile dist/build.js --debug --watch ",
+    "live:serve": "live-server ./dist",
+    "serve": "run-p build:watch live:serve",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [
+    "html5",
+    "video",
+    "chat"
+  ],
+  "author": "Aravind Buddha",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^4.3.1",
+    "simple-peer": "^5.12.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0",
+    "npm-run-all": "^4.1.1",
+    "simplifyify": "^3.2.4"
+  }
+}
